@@ -55,7 +55,7 @@ const remainderBname = remainderB.pop()
 
 console.log(remainderGname,remainderBname)
 
-totalCount = (remainderBname+remainderGname).length
+let totalCount = (remainderBname+remainderGname).length
 
 console.log(totalCount)
 
@@ -78,8 +78,8 @@ for (let i = 6; i > 1; i--) {
     console.log(flames)
     console.log((totalCount-1)%i, flames.length-1)
 
-    if ((totalCount-1)%i < flames.length-1 || (totalCount-1)%i != 0) {
-        flamesPart = flames.splice((totalCount-1)%i,)
+    if ((totalCount-1)%i < flames.length-1 || (totalCount-1)%i !== 0) {
+        let flamesPart = flames.splice((totalCount-1)%i,)
         console.log(flames)
         flames = [...flamesPart,...flames]
         console.log(flames)
